@@ -26,6 +26,12 @@ executable haskell-gtk
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.14.3.0
+    build-depends:    base ^>=4.14.3.0,
+                      gi-gtk,
+                      gi-gtk-declarative,
+                      gi-gtk-declarative-app-simple,
+                      text
+
     hs-source-dirs:   app
+    ghc-options:      -threaded
     default-language: Haskell2010
